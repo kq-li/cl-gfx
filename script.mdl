@@ -1,0 +1,77 @@
+frames 60
+basename final
+shading flat
+constants white 0.5 0.25 0.5 0.5 0.25 0.5 0.5 0.25 0.5
+ambient 255 255 255
+light l1 0 1 1 255 0 255
+push
+move 250 250 0
+push
+rotate x 90
+rotate z 360 double
+torus white 0 0 0 25 150
+pop
+push
+scale 1 1 1 o0_1_0_1_0
+push
+rotate x 360 single
+rotate y 360 triple
+move 150 0 0 o1_n1_1
+move 0 150 0 o0_1_n1_0
+sphere white 0 0 0 75
+pop
+rotate z 60
+push
+rotate x 360 single
+rotate y 360 triple
+move 150 0 0 o1_n1_1
+move 0 150 0 o0_1_n1_0
+sphere white 0 0 0 75
+pop
+rotate z 60
+push
+rotate x 360 single
+rotate y 360 triple
+move 150 0 0 o1_n1_1
+move 0 150 0 o0_1_n1_0
+sphere white 0 0 0 75
+pop
+rotate z 60
+push
+rotate x 360 single
+rotate y 360 triple
+move 150 0 0 o1_n1_1
+move 0 150 0 o0_1_n1_0
+sphere white 0 0 0 75
+pop
+rotate z 60
+push
+rotate x 360 single
+rotate y 360 triple
+move 150 0 0 o1_n1_1
+move 0 150 0 o0_1_n1_0
+sphere white 0 0 0 75
+pop
+rotate z 60
+push
+rotate x 360 single
+rotate y 360 triple
+move 150 0 0 o1_n1_1
+move 0 150 0 o0_1_n1_0
+sphere white 0 0 0 75
+pop
+rotate z 60
+vary o1_n1_1 0 59 1 -1
+vary o1_n1_1 60 119 -1 1
+vary o0_1_n1_0 0 29 0 1
+vary o0_1_n1_0 30 89 1 -1
+vary o0_1_n1_0 90 119 -1 0
+vary o0_1_0_1_0 0 29 0 1
+vary o0_1_0_1_0 30 59 1 0
+vary o0_1_0_1_0 60 89 0 1
+vary o0_1_0_1_0 90 119 1 0
+vary single 0 119 0 1
+vary double 0 119 0 2
+vary triple 0 119 0 3
+pop
+pop

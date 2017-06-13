@@ -1,0 +1,28 @@
+(load "util")
+(load "matrix")
+(load "shape")
+(load "draw")
+(load "display")
+(load "mdl")
+
+(in-package :graphics)
+
+(declaim (optimize (speed 3)
+                   (safety 0)
+                   (debug 0)))
+
+(setf *random-state* (make-random-state t))
+
+(defvar *edge-matrix* (make-matrix :dimensions '(4 0)))
+(defvar *triangle-matrix* (make-matrix :dimensions '(4 0)))
+(defvar *coordinate-systems* (list (make-identity-matrix)))
+(defvar *transformation-matrix* (make-identity-matrix))
+(defvar *x-resolution* 500)
+(defvar *y-resolution* 500)
+(defvar *background-color* #(0 0 0))
+(defvar *foreground-color* #(255 255 255))
+(defvar *screen* (make-array (list *x-resolution* *y-resolution*)
+                             :initial-element (cons *background-color* nil)))
+(defvar *shading-type* "wireframe")
+(defvar *ambient* nil)
+(defvar *view-vector* #(0 0 1))
